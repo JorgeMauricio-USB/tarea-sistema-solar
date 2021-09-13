@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar Animado</title>
+    <style>
+      body{
+        background-color: black;
+        color: white;
+      }
+      h1{
+        text-align: center;
+        font-family: sans-serif;
+      }
+    </style>
+
+</head>
+<body>
+    <h1>Sistema Solar</h1>
+    <svg version= "1.1" 
+    xmlns= "http://www.w3.Org/2000/svg" 
+    xmlns:xlink= "http://www.w3.org/1999/xlink"
+    width="1280" height= "960">
+    <image xlink: href= "texturas/espacio.jpg">
+    </image>
+
+      <path fill="none" stroke="null" opacity="undefined" d="m587.64703,950.51731c-318.39863,0 -576.30152,-179.00196 -576.30152,-399.99203c0,-220.99007 257.90289,-399.99203 576.30152,-399.99203c318.39863,0 576.30152,179.00196 576.30152,399.99203c0,220.99007 -257.90289,399.99203 -576.30152,399.99203z" id="pluton_o" />  
+      <path fill="none" stroke="null" opacity="undefined" d="m576.38898,928.03199c-306.88762,0 -555.46659,-170.46588 -555.46659,-380.91758c0,-210.4517 248.57897,-380.91758 555.46659,-380.91758c306.88762,0 555.46659,170.46588 555.46659,380.91758c0,210.4517 -248.57897,380.91758 -555.46659,380.91758z" id="neptuno_o" />
+      <path fill="none" stroke="null" opacity="undefined" d="m574.57074,869.84872c-287.80143,0 -520.92059,-155.00594 -520.92059,-346.3713c0,-191.36536 233.11916,-346.3713 520.92059,-346.3713c287.80143,0 520.92059,155.00594 520.92059,346.3713c0,191.36536 -233.11916,346.3713 -520.92059,346.3713z" id="urano_o"/>
+      <path fill="none" stroke="null" opacity="undefined" d="m574.57074,807.88646c-264.19468,0 -478.19238,-137.07306 -478.19238,-306.29906c0,-169.226 213.99769,-306.29906 478.19238,-306.29906c264.19468,0 478.19238,137.07306 478.19238,306.29906c0,169.226 -213.99769,306.29906 -478.19238,306.29906z" id="saturno_o"/>
+      <path fill="none" stroke="null" opacity="undefined" d="m576.38895,744.37895c-238.57885,0 -433.64594,-118.79442 -433.64594,-265.45419c0,-146.65977 193.24887,-265.45419 431.82772,-265.45419c238.57885,0 431.82772,118.79442 431.82772,265.45419c0,146.65977 -191.43065,265.45419 -430.0095,265.45419z" id="jupiter_o"/>
+      <path fill="none" stroke="null" opacity="undefined" d="m574.57073,677.11716c-219.99481,0 -398.19061,-100.48941 -398.19061,-224.55041c0,-124.061 178.1958,-224.55041 398.19061,-224.55041c219.99481,0 398.19061,100.48941 398.19061,224.55041c0,124.061 -178.1958,224.55041 -398.19061,224.55041z" id="marte_o"/>
+      <path fill="none" stroke="null" opacity="undefined" d="m574.57073,628.02516c-196.38807,0 -355.4624,-85.84318 -355.4624,-191.82241c0,-105.97923 159.07433,-191.82241 355.4624,-191.82241c196.38807,0 355.4624,85.84318 355.4624,191.82241c0,105.97923 -159.07433,191.82241 -355.4624,191.82241z" id="tierra_o"/>
+      <path fill="none" stroke="null" opacity="undefined" d="m574.57076,577.11495c-179.31084,0 -324.55263,-72.41747 -324.55263,-161.82175c0,-89.40428 145.24178,-161.82175 324.55263,-161.82175c179.31084,0 324.55263,72.41747 324.55263,161.82175c0,89.40428 -145.24178,161.82175 -324.55263,161.82175z" id="venus_o"/>
+      <path fill="none" stroke="null" opacity="undefined" d="m574.57071,533.47763c-154.19728,0 -279.09708,-59.80544 -279.09708,-133.63931c0,-73.83387 124.8998,-133.63931 279.09708,-133.63931c154.19728,0 279.09708,59.80544 279.09708,133.63931c0,73.83387 -124.8998,133.63931 -279.09708,133.63931z" id="mercurio_o"/>
+
+      <image xlink:href="texturas/mercurio.gif" width="25" height="25" x="-12" y="-12">
+        <animateMotion dur="6s" repeatCount= "indefinite">
+          <mpath xlink: href= "#mercurio_o"></mpath>
+        </animateMotion>
+      </image>
+      <image xlink:href="texturas/venus.png" width="35" height="35" x="-17" y="-17">
+        <animateMotion dur="7s" repeatCount= "indefinite">
+          <mpath xlink: href= "#venus_o"></mpath>
+        </animateMotion>
+      </image>
+      <image xlink:href="texturas/tierra.png" width="40" height="40" x="-20" y="-20">
+        <animateMotion dur="11s" repeatCount= "indefinite">
+          <mpath xlink: href= "#tierra_o"></mpath>
+        </animateMotion>
+      </image>
+      <image xlink:href="texturas/marte.png" width="35" height="35" x="-17" y="-17">    <!-- los -20 y esos en general deben ser la mitad de lo qu emide width y height -->
+        <animateMotion dur="16s" repeatCount= "indefinite">
+          <mpath xlink: href= "#marte_o"></mpath>
+        </animateMotion>
+      </image>
+      <image xlink:href="texturas/jupiter.png" width="60" height="60" x="-30" y="-30">
+        <animateMotion dur="20s" repeatCount= "indefinite">
+          <mpath xlink: href= "#jupiter_o"></mpath>
+        </animateMotion>
+      </image>
+      <image xlink:href="texturas/saturno.png" width="60" height="60" x="-30" y="-30">
+        <animateMotion dur="25s" repeatCount= "indefinite">
+          <mpath xlink: href= "#saturno_o"></mpath>
+        </animateMotion>
+      </image>
+      <image xlink:href="texturas/urano.png" width="60" height="60" x="-30" y="-30">
+        <animateMotion dur="30s" repeatCount= "indefinite">
+          <mpath xlink: href= "#urano_o"></mpath>
+        </animateMotion>
+      </image>
+      <image xlink:href="texturas/neptuno.png" width="30" height="30" x="-15" y="-15">
+        <animateMotion dur="35s" repeatCount= "indefinite">
+          <mpath xlink: href= "#neptuno_o"></mpath>
+        </animateMotion>
+      </image> 
+      <image xlink:href="texturas/pluto.png" width="10" height="10" x="-5" y="-5">
+        <animateMotion dur="45s" repeatCount= "indefinite">
+          <mpath xlink: href= "#pluton_o"></mpath>
+        </animateMotion>
+      </image> 
+      
+      <image  xlink:href="texturas/sol.png" width="150" height="150" x="490" y="320">
+      </image>
+
+</svg>
+</body>
+</html>
